@@ -1,4 +1,5 @@
 import React, { useEffect, useState} from 'react';
+import { Container } from 'react-bootstrap';
 import CurrencyRow from './CurrencyRow'
 
 
@@ -55,8 +56,8 @@ import CurrencyRow from './CurrencyRow'
   }
 
   return (
-    <>  
-      <h1>Convert</h1>
+    <Container>  
+      <h1>Valutaváltó</h1>
       <CurrencyRow
         currencyOptions={currencyOptions} 
         selectedCurrency={fromCurrency}
@@ -73,7 +74,7 @@ import CurrencyRow from './CurrencyRow'
         amount={toAmount}
       />
       
-    </>
+    </Container>
       
     );
   }
